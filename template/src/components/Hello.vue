@@ -22,8 +22,15 @@
 </template>
 
 <script lang="ts">
-export default {
-  data (): any {
+import Vue from 'vue'
+
+interface Data {
+  welcomeMsg: string,
+  appName: string
+}
+
+export default Vue.extend({
+  data (): Data {
     return {
       welcomeMsg: 'Welcome to Your',
       appName: 'Vue.js App'
@@ -41,7 +48,7 @@ export default {
       this.appName = this.appName.split('').reverse().join('')
     }
   }
-}
+})
 </script>
 
 <style>

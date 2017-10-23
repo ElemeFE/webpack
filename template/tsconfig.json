@@ -4,7 +4,7 @@
     "experimentalDecorators": true,
     "outDir": "./dist/",
     "sourceMap": true,
-    "noImplicitReturns": true,
+    "strict": true,
     "module": "es2015",
     "moduleResolution": "node",
     "target": "es5"

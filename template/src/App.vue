@@ -10,16 +10,17 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 {{#unless router}}
 import Hello from './components/Hello'
 
 {{/unless}}
-export default {
+export default Vue.extend({
   name: 'app'{{#router}}{{else}},
   components: {
     Hello
   }{{/router}}
-}
+})
 </script>
 
 <style>
